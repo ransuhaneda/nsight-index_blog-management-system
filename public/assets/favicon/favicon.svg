@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><style>
+    #light-icon {
+      display: inline;
+    }
+    #dark-icon {
+      display: none;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      #light-icon {
+        display: none;
+      }
+      #dark-icon {
+        display: inline;
+      }
+    }
+  </style><g id="light-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><g clip-path="url(#SvgjsClipPath1440)"><rect width="1000" height="1000" fill="#262626"></rect><g transform="matrix(14.035087719298245,0,0,14.035087719298245,100,100)"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="57" height="57"><svg xmlns="http://www.w3.org/2000/svg" width="57" height="57" fill="none"><path fill="#000" d="M0 0h56.08v56.08H0z"></path><path fill="#FCFBF4" d="M43.2 5h-2.77L28.04 19.62 15.65 5H5v46.08h10.65l12.39-15.25 12.39 15.25h10.65V5H43.2ZM13.45 37.21V18.44l7.84 9.2-7.84 9.57Zm21.34-9.57 7.84-9.2v18.77l-7.84-9.57Z"></path></svg></svg></g></g><defs><clipPath id="SvgjsClipPath1440"><rect width="1000" height="1000" x="0" y="0" rx="200" ry="200"></rect></clipPath></defs></svg></g><g id="dark-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><g clip-path="url(#SvgjsClipPath1441)"><rect width="1000" height="1000" fill="#ffffff"></rect><g transform="matrix(14.035087719298245,0,0,14.035087719298245,100,100)"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="57" height="57"><svg xmlns="http://www.w3.org/2000/svg" width="57" height="57" fill="none"><path fill="#FCFBF4" d="M0 0h56.08v56.08H0z"></path><path fill="#262626" d="M43.2 5h-2.77L28.04 19.62 15.65 5H5v46.08h10.65l12.39-15.25 12.39 15.25h10.65V5H43.2ZM13.45 37.21V18.44l7.84 9.2-7.84 9.57Zm21.34-9.57 7.84-9.2v18.77l-7.84-9.57Z"></path></svg></svg></g></g><defs><clipPath id="SvgjsClipPath1441"><rect width="1000" height="1000" x="0" y="0" rx="100" ry="100"></rect></clipPath></defs></svg></g></svg>

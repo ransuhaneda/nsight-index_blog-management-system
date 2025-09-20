@@ -1,0 +1,32 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+    - vendor/nesbot/carbon/extension.neon
+    - phpstan-baseline.neon
+
+parameters:
+    level: max
+
+    reportUnmatchedIgnoredErrors: false
+    
+    paths:
+        - app/
+        - config
+        - database/factories
+        - database/seeders
+        - routes
+        - routes/
+        - tests
+
+    excludePaths:
+        - %currentWorkingDirectory%/vendor
+        - %currentWorkingDirectory%/storage
+        - %currentWorkingDirectory%/bootstrap/cache
+        - %currentWorkingDirectory%/node_modules
+    
+    fileExtensions:
+        - php
+
+    parallel:
+      maximumNumberOfProcesses: 4
+
+    tmpDir: storage/.phpstan

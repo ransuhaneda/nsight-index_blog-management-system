@@ -1,0 +1,112 @@
+<div class="bg-light rounded-3 container border border-black p-0">
+  {{-- Creation date and Likes --}}
+  <div
+    class="col-md-8 d-flex flex-column align-items-start justify-content-between gap-3 px-3 py-4"
+  >
+    {{-- Avatar section --}}
+    <div class="d-flex align-items-center flex-row gap-2">
+      <x-user-avatar :user="$post->user" size="h-9 w-9" />
+      <div class="d-flex flex-column fw-medium text-dark text-sm">
+        <a
+          href="{{ route('profile.show', $post->user) }}"
+          class="text-decoration-none text-dark fw-bold hover:underline"
+        >
+          {{ $post->user->name }}
+        </a>
+        <div class="flex gap-1 font-light">
+          <span>{{ $post->created_at->format('M d, Y') }}</span>
+          <span>({{ $post->created_at->diffForHumans() }})</span>
+
+          {{-- <x-time-display :post="$post" :timezone="$timezone" /> --}}
+        </div>
+      </div>
+    </div>
+    {{-- Content section --}}
+    <div class="flex flex-col gap-3">
+      <a
+        class="text-decoration-none"
+        href="{{
+          route('post.show', [
+            'username' => $post->user->username,
+            'post' => $post->slug,
+          ])
+        }}"
+      >
+        <h5
+          class="fs-2 m-0 font-bold tracking-tight text-gray-900 hover:text-indigo-600"
+        >
+          {{ $post->title }}
+        </h5>
+      </a>
+      <div class="font-light text-gray-700">
+        {{ Str::words($post->content, 20) }}
+      </div>
+    </div>
+
+    {{-- Read More section --}}
+    <div class="d-flex align-items-center flex-wrap gap-3 text-gray-700">
+      <span class="d-none d-lg-flex">
+        <a
+          href="{{
+            route('post.show', [
+              'username' => $post->user->username,
+              'post' => $post->slug,
+            ])
+          }}"
+          class="text-decoration-none d-inline-flex align-items-center rounded-3 bg-dark fs-6 fw-medium text-light px-3 py-2 text-center"
+        >
+          Read more
+          <svg
+            class="ms-2 h-3.5 w-3.5 rtl:rotate-180"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 14 10"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 5h12m0 0L9 1m4 4L9 9"
+            />
+          </svg>
+        </a>
+      </span>
+
+      {{-- Like/Comment section --}}
+      <div
+        class="d-flex flex-sm-row align-items-start align-items-sm-center justify-content-center flex-column gap-2"
+      >
+        <div class="d-flex gap-2">
+          <x-like-button :post="$post" />
+          <x-comment-button :post="$post" />
+        </div>
+
+        <a
+          href="{{ route('post.byCategory', $post->category) }}"
+          class="rounded-pill bg-dark small text-light text-decoration-none px-3 py-2"
+        >
+          {{ $post->category->name }}
+        </a>
+      </div>
+    </div>
+  </div>
+  {{-- Image Container --}}
+  <div class="col-md-4">
+    <a
+      href="{{
+        route('post.show', [
+          'username' => $post->user->username,
+          'post' => $post->slug,
+        ])
+      }}"
+    >
+      <img
+        class="w-100 h-100 rounded-3"
+        src="{{ $post->imageUrl('preview') }}"
+        alt=""
+      />
+    </a>
+  </div>
+</div>
