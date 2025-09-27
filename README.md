@@ -15,19 +15,19 @@
 <br />
 <div align="center">
 
-   <a href="https://github.com/ransuhaneda/nsight-index-blog">
-    <img src="public/assets/favicon.svg" alt="Logo" width="96" height="96">
+   <a href="https://github.com/ransuhaneda/nsight-index_blog-management-system">
+    <img src="public/assets/favicon/favicon.svg" alt="Logo" width="96" height="96">
   </a>
   <h3 align="center">Nsight Index - Blog & Article Management System</h3>
   <p align="center">
     A full-featured Laravel blog platform with multi-role authentication, CRUD operations, and media management.
     <br />
-    <a href="https://github.com/ransuhaneda/nsight-index-blog"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/ransuhaneda/nsight-index_blog-management-system"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/ransuhaneda/nsight-index-blog/issues">Report Bug</a>
+    <a href="https://github.com/ransuhaneda/nsight-index_blog-management-system/issues">Report Bug</a>
     ·
-    <a href="https://github.com/ransuhaneda/nsight-index-blog/issues">Request Feature</a>
+    <a href="https://github.com/ransuhaneda/nsight-index_blog-management-system/issues">Request Feature</a>
   </p>
 </div>
 
@@ -169,7 +169,11 @@ development environment.
 
 1.  **Install Mailpit** (if not already installed). See the
     <a href="#mailpit-installation">installation guide below</a>.
-2.  Start the Mailpit service in a new terminal:
+2.  Create a .sqlite file on database/
+    ```bash
+    touch database/mailDB.sqlite
+    ```
+3.  Start the Mailpit service in a new terminal:
     ```bash
     mailpit --verbose -d database/mailDB.sqlite
     ```
@@ -240,9 +244,10 @@ Distributed under the MIT License. See LICENSE.txt for more information.
 
 ### Contact
 
-Lance Carteciano - @ransuhaneda - ransuhaneda@gmail.com Project Link:
-https://github.com/ransuhaneda/nsight-index-blog Social Link:
-https://linktr.ee/ransuhaneda
+- Lance Carteciano - @ransuhaneda - ransuhaneda@gmail.com
+- Link: https://github.com/ransuhaneda/nsight-index_blog-management-system
+
+- Social Link: https://linktr.ee/ransuhaneda
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
