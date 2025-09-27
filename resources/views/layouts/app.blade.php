@@ -7,6 +7,28 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
+    <!-- Meta Information -->
+    <meta
+      name="description"
+      content="Build, manage, and scale your Laravel blog with powerful multi-role authentication, intuitive CRUD features, and streamlined media management. Perfect for creators and teams seeking a robust blog solution."
+      data-rh="true"
+    />
+    <meta
+      property="og:description"
+      content="Launch your Laravel-powered blog with advanced user roles, easy content management, and reliable media handling. The ideal platform for modern bloggers and multi-author teams."
+    />
+    <meta
+      property="og:image"
+      content="{{ asset('assets/favicon/opengraph-image.png') }}"
+    />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="640" />
+    <meta property="og:site_name" content="Nsight Index" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_us" />
+    <meta property="og:url" content="https://nsightindex.384721.xyz/" />
+    <meta property="og:title" content="Nsight Index" />
+
     <!-- Favicon -->
     <link
       rel="apple-touch-icon"
